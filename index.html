@@ -8,23 +8,46 @@
      <h1>Instructions</h1>
   <p>Make a page that looks as much as possible like the nametag.jpg image below without using that image. See README.md for tasks. </p>
   <style>
-    .nametag {
+    .name {
       width: 800px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: xx-large;
-    }
-    .nametag {
-      border-style: solid ;
-      border-width: 1px;
-      border-radius: 25px;
       text-align: center;
-      box-shadow: 5px 10px;
-      border-color: gray;
+	  border-radius: 20px;
+	  color: #FF4ADB;
+	  border-bottom: 1px solid #FF4ADB;
+	  height: 467px;
+	  border: 1px solid black;
+	  box-shadow: 15px 15px 10px 12px #666;
+	  border-bottom: 7px solid #FF4ADB;
     }
-
+	.hi{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 150px;
+	border-radius: inherit;
+	color: white;
+	background-color: #FF4ADB; 
+	}
+	
+	.is{
+	  font-size: 60px;
+	  color: #FF4ADB;
+	  margin: 10px;
+	  font-family: Arial, Helvetica, sans-serif;
+	  }
+	  
+	  .action{
+	  
+	   }
   </style>
-  <img src="nametag.jpg">
-  <div class="nametag"><h1>HELLO</h1></div>
+  <img src="nametag.jpg" width="800px">
+  <div class="name">
+  <header class="hi">HELLO</header>
+  <strong><p class="is">My Name Is</p></strong>
+  <form class="action" action="/action_page.php">
+  <label for="fname"></label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Save">
+</form>
+  </div>
   <script src="script.js"></script>
   </body>
 </html>
